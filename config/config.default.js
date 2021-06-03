@@ -25,20 +25,20 @@ module.exports = appInfo => {
     //数据库
     config.sequelize = {
         dialect: 'mysql',
-        host: '127.0.0.1',
+        host: 'localhost',
         port: 3306,
         database: 'egg-sequelize-doc-default',
     };
 
     //redis数据库
-    config.redis = {
-        client: {
-            port: 6379, // Redis port
-            host: '127.0.0.1', // Redis host
-            password: '',
-            db: 0
-        }
-    };
+    // config.redis = {
+    //     client: {
+    //         port: 6379, // Redis port
+    //         host: '127.0.0.1', // Redis host
+    //         password: '',
+    //         db: 0
+    //     }
+    // };
     //处理跨域
     config.security = {
         csrf: {
