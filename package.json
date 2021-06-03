@@ -39,7 +39,7 @@
         "test-local": "egg-bin test",
         "cov": "egg-bin cov",
         "lint": "eslint .",
-        "ci": "NODE_ENV=test npx sequelize db:migrate && egg-bin cov",
+        "ci": "NODE_ENV=defalt npx sequelize db:migrate && egg-bin cov",
         "autod": "autod"
     },
     "ci": {
