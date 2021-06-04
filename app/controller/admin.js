@@ -37,8 +37,8 @@ class LoginController extends Controller {
             'user_name': userName,
             'pass_word': passWord //需要存储的 token 数据
         }, app.config.jwt.secret, {
-            expiresIn: '10m'
-        }); // 2分钟token过期
+            expiresIn: '30s'
+        }); // 30秒token过期
 
         //redis 缓存token  
         // this.service.redis.set(token, "token", 10);
