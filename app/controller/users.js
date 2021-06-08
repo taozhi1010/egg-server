@@ -15,7 +15,7 @@ class UserController extends Controller {
             limit: toInt(ctx.query.limit),
             offset: toInt(ctx.query.offset),
         };
-        ctx.body = await ctx.model.User.findAll(query) + "";
+        ctx.body = await ctx.model.User.findAll(query);
     }
 
     async show() {
